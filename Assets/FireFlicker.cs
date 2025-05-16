@@ -31,6 +31,6 @@ public class FireFlicker : MonoBehaviour
 
     private float OffsetByStrenght()
     {
-        return Mathf.Pow(Random.Range(-flickerStrength, flickerStrength), 2f);
+        return Mathf.Pow(Random.Range(0 , flickerStrength), 2f) * (Random.value > 0.5f ? 1 : -1);
     }
 }
