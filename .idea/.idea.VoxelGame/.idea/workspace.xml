@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/FireFlicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FireFlicker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PixelRender.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PixelRender.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747363507942</updated>
       <workItem from="1747363508821" duration="17000" />
-      <workItem from="1747363536987" duration="368000" />
+      <workItem from="1747363536987" duration="964000" />
     </task>
     <servers />
   </component>
