@@ -71,8 +71,8 @@ namespace KinematicCharacterController.Examples
 #endif
 
             // Apply inputs to the camera
-            CharacterCamera.UpdateWithInput(Time.deltaTime, scrollInput, lookInputVector);
-
+            CharacterCamera.UpdateWithInput(Time.deltaTime, 0.1f, lookInputVector);
+            //print(scrollInput);
             // Handle toggling zoom level
             if (Input.GetMouseButtonDown(1))
             {
