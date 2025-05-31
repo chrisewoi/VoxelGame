@@ -13691,13 +13691,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 595995330682813524, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 595995330682813524, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 822baefa3d5a17144be01c21a96bb870, type: 2}
     - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: MaxDistance
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: MinDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: DefaultDistance
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: MinVerticalAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: RotationSharpness
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: FollowingSharpness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: FollowPointFraming.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069337472157708311, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: RotateWithPhysicsMover
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2345777663124918648, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13739,16 +13771,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2980924919262273348, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_CameraType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814777120698742506, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: MaxStableMoveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814777120698742506, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: OrientationSharpness
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6814777120698742506, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: BonusOrientationMethod
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814777120698742506, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: BonusOrientationSharpness
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814777120698742506, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: IgnoredColliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883448870876999951, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: CapsuleHeight
+      value: 10.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883448870876999951, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: CapsuleRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883448870876999951, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: CapsuleYOffset
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883448870876999951, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: HasPlanarConstraint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883448870876999951, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: MaxStableDenivelationAngle
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7379891454253571479, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 8083437517171284594, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_Height
+      value: 10.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083437517171284594, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_Radius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083437517171284594, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: m_Center.y
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 466567348819217231, guid: 607a4ed068f32a340877181adc216f25, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 607a4ed068f32a340877181adc216f25, type: 3}

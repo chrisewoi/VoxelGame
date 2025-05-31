@@ -77,7 +77,10 @@ namespace KinematicCharacterController.Examples
         public void SetFollowTransform(Transform t)
         {
             FollowTransform = t;
+            //FollowTransform.up = Vector3.up;
+            //FollowTransform.forward = new Vector3(FollowTransform.forward.x, FollowTransform.forward.y, 0f);
             PlanarDirection = FollowTransform.forward;
+            FollowTransform.up = Vector3.up;
             _currentFollowPosition = FollowTransform.position;
         }
 
@@ -95,18 +98,20 @@ namespace KinematicCharacterController.Examples
                 }
 
                 // Process rotation input
-                Quaternion rotationFromInput = Quaternion.Euler(FollowTransform.up * (rotationInput.x * RotationSpeed));
+                Quaternion rotationFromInput = Quaternion.Euler(Vector3.up * (rotationInput.x * RotationSpeed));
                 PlanarDirection = rotationFromInput * PlanarDirection;
-                PlanarDirection = Vector3.Cross(FollowTransform.up, Vector3.Cross(PlanarDirection, FollowTransform.up));
-                Quaternion planarRot = Quaternion.LookRotation(PlanarDirection, FollowTransform.up);
+                Vector3 cameraTilt = new Vector3(FollowTransform.up.x * 0.1f, 1f, FollowTransform.up.z * 0.01f);
+                PlanarDirection = Vector3.Cross(cameraTilt, Vector3.Cross(PlanarDirection, cameraTilt));
+                Quaternion planarRot = Quaternion.LookRotation(PlanarDirection, cameraTilt);
 
                 _targetVerticalAngle -= (rotationInput.y * RotationSpeed);
                 _targetVerticalAngle = Mathf.Clamp(_targetVerticalAngle, MinVerticalAngle, MaxVerticalAngle);
                 Quaternion verticalRot = Quaternion.Euler(_targetVerticalAngle, 0, 0);
                 Quaternion targetRotation = Quaternion.Slerp(Transform.rotation, planarRot * verticalRot, 1f - Mathf.Exp(-RotationSharpness * deltaTime));
-
+                
                 // Apply rotation
                 Transform.rotation = targetRotation;
+                //Quaternion.Euler(0f, Transform.rotation.eulerAngles.y, 0f);
 
                 // Process distance input
                 if (_distanceIsObstructed && Mathf.Abs(zoomInput) > 0f)
