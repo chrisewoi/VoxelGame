@@ -14,6 +14,7 @@ public class LightFire : MonoBehaviour
     void Start()
     {
         lit = false;
+        lightswitch.SetActive(false);
     }
 
 
@@ -29,7 +30,11 @@ public class LightFire : MonoBehaviour
 
         if(lit != lightswitch.activeInHierarchy)
         {
-            lightswitch.SetActive(lit);
+            lightTime -= Time.deltaTime;
+            if (lightTime < 0f)
+            {
+                lightswitch.SetActive(lit);
+            }
         }
     }
 }

@@ -92,7 +92,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pickup 0
-  m_Speed: 0.4
+  m_Speed: 0.2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7106420186058817152}

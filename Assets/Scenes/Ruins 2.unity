@@ -61958,6 +61958,7 @@ MonoBehaviour:
   lightswitch: {fileID: 1963737858}
   activateDistance: 14
   distance: 0
+  lightTime: 1
   animator: {fileID: 1801507616}
 --- !u!1 &1888027646 stripped
 GameObject:
