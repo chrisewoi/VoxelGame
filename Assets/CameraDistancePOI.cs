@@ -35,7 +35,7 @@ public class CameraDistancePOI : MonoBehaviour
         }
 
         cameraCurrent = Mathf.Lerp(cameraMin, cameraMax, Mathf.InverseLerp(distanceMin, distanceMax, currentMinDistance));
-        print(cameraCurrent);
+        //print(cameraCurrent);
         //ExampleCharacterCamera.DefaultDistance = Mathf.Round(cameraCurrent/cameraCurrentIncrement)*cameraCurrentIncrement;
         //ExampleCharacterCamera.MaxDistance = Mathf.Round(cameraCurrent / cameraCurrentIncrement) * cameraCurrentIncrement;
         ExampleCharacterCamera.MaxDistance = Mathf.SmoothDamp(cameraCurrentSmooth, cameraCurrent, ref v, smoothTime);
