@@ -19,7 +19,7 @@ public class DebugShowVelocity : MonoBehaviour
 
     public Vector3 GetLookPoint()
     {
-        return transform.position + kinematicCharacterMotor.BaseVelocity;
+        return transform.position + (kinematicCharacterMotor.BaseVelocity * 2f); // THIS IS WHERE THE LOOK VELOCITY MULT IS <<<
     }
 
     public Vector3 GetVelocity()

@@ -40,4 +40,9 @@ public class CameraDistancePOI : MonoBehaviour
         //ExampleCharacterCamera.MaxDistance = Mathf.Round(cameraCurrent / cameraCurrentIncrement) * cameraCurrentIncrement;
         ExampleCharacterCamera.MaxDistance = Mathf.SmoothDamp(cameraCurrentSmooth, cameraCurrent, ref v, smoothTime);
     }
+
+    public float GetPOIDistance()
+    {
+        return currentMinDistance;
+    }
 }

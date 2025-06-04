@@ -19,6 +19,8 @@ public class BotMove : MonoBehaviour
 
     public Transform player;
     public KinematicCharacterMotor kinematicCharacterMotor;
+    public CameraDistancePOI cameraDistancePOI;
+    public float activateDistance;
 
     private float distance;
     private Vector3 v;
@@ -35,10 +37,18 @@ public class BotMove : MonoBehaviour
     {
         AccuracyOffset();
         timer += Time.deltaTime;
-        SetDestination(offsetCurrent.position);
+
+        if(activateDistance > cameraDistancePOI.GetPOIDistance()) //if near POI, put away bot
+        {
+            SetDestination(player.position);
+        }
+        else
+        {
+            SetDestination(offsetCurrent.position);
+        }
         
         distance = Vector3.Distance(transform.position, destination);
-
+        
         if (distance > 1f)
         {
             // Move towards destination
@@ -48,6 +58,7 @@ public class BotMove : MonoBehaviour
 
     public void SetDestination(Vector3 destination)
     {
+        destination.y += GetVelocityMagnitude() * heightBySpeed;
         this.destination = destination;
         transform.forward = player.forward;
     }
@@ -60,5 +71,10 @@ public class BotMove : MonoBehaviour
             offsetCurrent.position = offsetDefault.position + Random.insideUnitSphere * accuracy;
             timer = 0;
         }
+    }
+
+    private float GetVelocityMagnitude()
+    {
+        return kinematicCharacterMotor.Velocity.magnitude;
     }
 }
