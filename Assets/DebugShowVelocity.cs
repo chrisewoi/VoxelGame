@@ -14,6 +14,6 @@ public class DebugShowVelocity : MonoBehaviour
         if (!Application.isPlaying) return;
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + kinematicCharacterMotor.BaseVelocity);
-        Debug.Log(kinematicCharacterMotor.BaseVelocity);
+        //Debug.Log(kinematicCharacterMotor.BaseVelocity);
     }
 }

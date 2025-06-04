@@ -15844,7 +15844,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 0.9546302, b: 0.8160377, a: 1}
-  m_Intensity: 2000
+  m_Intensity: 0
   m_Range: 199.79803
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15913,6 +15913,8 @@ MonoBehaviour:
   flickerStrength: 0.6
   interval: 3
   currentInterval: 3
+  timeToFull: 0
+  lightIntensity: 0
 --- !u!4 &564561295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1577199875826440660, guid: 607a4ed068f32a340877181adc216f25, type: 3}
@@ -53163,6 +53165,8 @@ MonoBehaviour:
   flickerStrength: 0.6
   interval: 3
   currentInterval: 3
+  timeToFull: 5
+  lightIntensity: 2000
 --- !u!114 &1438783302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53197,7 +53201,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 0.9546302, b: 0.8160377, a: 1}
-  m_Intensity: 2000
+  m_Intensity: 0
   m_Range: 199.79803
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
