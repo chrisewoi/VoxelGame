@@ -17518,6 +17518,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6268786116922714612, guid: e90e45ff6cb98a84fb1d909c284ce4f0, type: 3}
+      propertyPath: far clip plane
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6268786116922714612, guid: e90e45ff6cb98a84fb1d909c284ce4f0, type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 822baefa3d5a17144be01c21a96bb870, type: 2}
@@ -17708,9 +17712,9 @@ Transform:
   m_GameObject: {fileID: 1952430294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -202, y: 934, z: 967}
+  m_LocalPosition: {x: -3774, y: 0, z: -1909}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
