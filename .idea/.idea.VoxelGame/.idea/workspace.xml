@@ -7,9 +7,8 @@
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BotLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BotLook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BotMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BotMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraDistancePOI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraDistancePOI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DebugShowVelocity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DebugShowVelocity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,28 +31,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\3dcc4c3465acea00\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\3dcc4c3465acea00\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\3dcc4c3465acea00\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\3dcc4c3465acea00\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\3dcc4c3465acea00\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\3dcc4c3465acea00\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\Unity 6000.0.31f1\Editor\Unity.exe" />
@@ -107,6 +106,7 @@
       <workItem from="1748677437338" duration="5863000" />
       <workItem from="1748939800481" duration="6557000" />
       <workItem from="1749003731306" duration="10613000" />
+      <workItem from="1749086522931" duration="2491000" />
     </task>
     <servers />
   </component>

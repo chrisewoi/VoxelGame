@@ -24,6 +24,11 @@ public class BotLook : MonoBehaviour
 
     public CameraDistancePOI cameraDistancePOI;
     public float activateDistance;
+
+    public Transform lineAnchor;
+    public float spinSpeed;
+    private float currentSpin;
+    public LineRenderer line;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -58,6 +63,20 @@ public class BotLook : MonoBehaviour
 
         lightIntensityMult = Mathf.Clamp01(lightIntensityMult);
 
+        
+        if (lightIntensityMult > 0.01f && lightIntensityMult < 0.99f)
+        {
+            line.widthMultiplier = 0.3f;
+            Vector3 lineAngle = new Vector3(0f, 0f, lightIntensityMult * spinSpeed);
+            lineAnchor.localEulerAngles = lineAngle;
+        }
+        else
+        {
+            line.widthMultiplier = 0f;
+        }
+        
+        
+
         if (timer > updateRateCurrent)
         {
             updateRateCurrent = Random.Range(updateRateMin, updateRateMax);
@@ -65,6 +84,9 @@ public class BotLook : MonoBehaviour
             light.intensity = lightIntensityDefault * lightIntensityMult;
 
             currentDestination = destination.GetLookPoint() + currentRandomOffset;
+
+
+            
             if(Random.value < 0.2)  currentRandomOffset = (Random.insideUnitSphere * inaccuracy); // THIS IS WHERE LIGHT RANDOM RATE IS
         }
         //Debug.Log("Vel Mag: " + destination.GetVelocity().magnitude);
