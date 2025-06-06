@@ -26,39 +26,54 @@ public class BotMove : MonoBehaviour
     private Vector3 v;
 
     public Transform set;
-    
+
+    public float hideMult;
+    private float hideMultCurrent;
+    public Transform companion;
+    private float companionMult;
+    private Vector3 scaleOrig;
     
     void Start()
     {
-        
+        scaleOrig = companion.localScale;
     }
 
     void Update()
     {
         AccuracyOffset();
         timer += Time.deltaTime;
-
+        
+        distance = Vector3.Distance(transform.position, destination);
+        
         if(activateDistance > cameraDistancePOI.GetPOIDistance()) //if near POI, put away bot
         {
             SetDestination(player.position);
+            hideMultCurrent += hideMult * Time.deltaTime;
+            if (distance < 1f)
+            {
+                hideMultCurrent = 1000f;
+                companion.localScale = Vector3.one;
+            }
         }
         else
         {
             SetDestination(offsetCurrent.position);
+            hideMultCurrent = 1f;
+            companion.localScale = scaleOrig;
         }
         
-        distance = Vector3.Distance(transform.position, destination);
+        
         
         if (distance > 1f)
         {
             // Move towards destination
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref v, speed );
+            transform.position = Vector3.SmoothDamp(transform.position, destination, ref v, speed / hideMultCurrent);
         }
     }
 
     public void SetDestination(Vector3 destination)
     {
-        destination.y += GetVelocityMagnitude() * heightBySpeed;
+        destination.y += GetVelocityMagnitude() * heightBySpeed / hideMultCurrent;
         this.destination = destination;
         transform.forward = player.forward;
     }
