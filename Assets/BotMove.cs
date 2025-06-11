@@ -25,7 +25,7 @@ public class BotMove : MonoBehaviour
     private float distance;
     private Vector3 v;
 
-    public Transform set;
+    public Transform hidePos;
 
     public float hideMult;
     private float hideMultCurrent;
@@ -48,7 +48,7 @@ public class BotMove : MonoBehaviour
         
         if(activateDistance > cameraDistancePOI.GetPOIDistance()) //if near POI, put away bot
         {
-            SetDestination(player.position);
+            SetDestination(hidePos.position);
             hideMultCurrent += hideMult * Time.deltaTime;
             if (distance < 1f)
             {

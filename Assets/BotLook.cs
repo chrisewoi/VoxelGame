@@ -18,7 +18,9 @@ public class BotLook : MonoBehaviour
     private Vector3 currentDestination;
     private Vector3 currentRandomOffset;
 
-    private new Light light;
+    public new Light light;
+    public Light glowLight;
+    private float glowLightIntensityDefault;
     private float lightIntensityDefault;
     private float lightIntensityMult;
     private float lightRandomOffsetMult;
@@ -35,7 +37,7 @@ public class BotLook : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        light = GetComponent<Light>();
+        //light = GetComponent<Light>();
         lightIntensityDefault = light.intensity;
         updateRateCurrent = Random.Range(updateRateMin, updateRateMax);
 
@@ -85,6 +87,7 @@ public class BotLook : MonoBehaviour
             updateRateCurrent = Random.Range(updateRateMin, updateRateMax);
             timer = 0f;
             light.intensity = lightIntensityDefault * lightIntensityMult;
+            glowLight.intensity = glowLightIntensityDefault * lightIntensityMult;
 
             if(Random.value < 0.9f) currentDestination = destination.GetLookPoint() + currentRandomOffset; // 10% chance the light "forgets" to update
 
