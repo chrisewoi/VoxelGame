@@ -38,7 +38,9 @@ namespace KinematicCharacterController.Examples
         private void UpdateOnImages()
         {
             RenderOn.enabled = Camera.cullingMask == -1;
+#pragma warning disable CS0618
             SimOn.enabled = Physics.autoSimulation;
+#pragma warning restore CS0618
             InterpOn.enabled = KinematicCharacterSystem.Settings.Interpolate;
         }
 
@@ -65,7 +67,9 @@ namespace KinematicCharacterController.Examples
 
         public void TogglePhysicsSim()
         {
+#pragma warning disable CS0618
             Physics.autoSimulation = !Physics.autoSimulation;
+#pragma warning restore CS0618
             UpdateOnImages();
         }
 

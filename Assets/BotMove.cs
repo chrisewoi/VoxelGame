@@ -36,6 +36,7 @@ public class BotMove : MonoBehaviour
     void Start()
     {
         scaleOrig = companion.localScale;
+        hideMultCurrent = 1f;
     }
 
     void Update()

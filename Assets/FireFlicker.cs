@@ -15,7 +15,7 @@ public class FireFlicker : MonoBehaviour
     private float timeCurrent;
     private float startupMult;
     
-    private Light light;
+    private new Light light;
     public float lightIntensity;
     
 
