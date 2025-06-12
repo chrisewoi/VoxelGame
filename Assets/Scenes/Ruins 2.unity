@@ -16576,6 +16576,8 @@ MonoBehaviour:
   lineAnchor: {fileID: 1535161128}
   spinSpeed: 10000
   line: {fileID: 1116793324}
+  botMove: {fileID: 749405868}
+  glowSphere: {fileID: 1431408137}
 --- !u!114 &614920469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27673,6 +27675,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749405868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 725052926243114641, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+  m_PrefabInstance: {fileID: 542466289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7298ccc65303c34bbc28e5adf652896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &757156656
 GameObject:
   m_ObjectHideFlags: 0
@@ -53393,6 +53406,11 @@ ParticleSystemForceField:
         m_RotationOrder: 4
     m_MultiplyDragByParticleSize: 1
     m_MultiplyDragByParticleVelocity: 1
+--- !u!4 &1431408137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1895438019422389029, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+  m_PrefabInstance: {fileID: 542466289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1434229901
 PrefabInstance:
   m_ObjectHideFlags: 0

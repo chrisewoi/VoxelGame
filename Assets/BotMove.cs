@@ -68,7 +68,6 @@ public class BotMove : MonoBehaviour
         }
 
         glowMult = Mathf.Clamp01(glowMult);
-        print(glowMult);
         
         
         if (distance > 1f)
