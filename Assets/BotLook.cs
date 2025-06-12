@@ -23,6 +23,7 @@ public class BotLook : MonoBehaviour
     private float glowLightIntensityDefault;
     private float lightIntensityDefault;
     private float lightIntensityMult;
+    private float glowLightIntensityMult;
     private float lightRandomOffsetMult;
 
     public CameraDistancePOI cameraDistancePOI;
@@ -32,6 +33,10 @@ public class BotLook : MonoBehaviour
     public float spinSpeed;
     private float currentSpin;
     public LineRenderer line;
+
+    public BotMove botMove;
+    public Transform glowSphere;
+    private Vector3 glowSphereScaleDefault;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +47,9 @@ public class BotLook : MonoBehaviour
         updateRateCurrent = Random.Range(updateRateMin, updateRateMax);
 
         lightRandomOffsetMult = 1f;
+
+        glowLightIntensityDefault = glowLight.intensity;
+        glowSphereScaleDefault = glowSphere.localScale;
     }
 
     // Update is called once per frame
@@ -87,7 +95,8 @@ public class BotLook : MonoBehaviour
             updateRateCurrent = Random.Range(updateRateMin, updateRateMax);
             timer = 0f;
             light.intensity = lightIntensityDefault * lightIntensityMult;
-            glowLight.intensity = glowLightIntensityDefault * lightIntensityMult;
+            glowLightIntensityMult = botMove.GetGlowMult();
+            glowLight.intensity = glowLightIntensityDefault * glowLightIntensityMult;
 
             if(Random.value < 0.9f) currentDestination = destination.GetLookPoint() + currentRandomOffset; // 10% chance the light "forgets" to update
 
@@ -103,5 +112,8 @@ public class BotLook : MonoBehaviour
         timer += Time.deltaTime;
         lightRandomOffsetMult -= 8f * Time.deltaTime;
         lightRandomOffsetMult = Mathf.Clamp(lightRandomOffsetMult, 1f, 4f);
+
+        
+        glowSphere.localScale = glowSphereScaleDefault * botMove.GetGlowMult() + (Vector3.one * (Mathf.Cos(Time.time * 2f) * 0.5f));
     }
 }

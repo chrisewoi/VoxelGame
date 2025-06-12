@@ -32,6 +32,8 @@ public class BotMove : MonoBehaviour
     public Transform companion;
     private float companionMult;
     private Vector3 scaleOrig;
+
+    private float glowMult;
     
     void Start()
     {
@@ -54,6 +56,7 @@ public class BotMove : MonoBehaviour
             {
                 hideMultCurrent = 1000f;
                 companion.localScale = Vector3.one;
+                glowMult -= Time.deltaTime;
             }
         }
         else
@@ -61,8 +64,11 @@ public class BotMove : MonoBehaviour
             SetDestination(offsetCurrent.position);
             hideMultCurrent = 1f;
             companion.localScale = scaleOrig;
+            glowMult += Time.deltaTime;
         }
-        
+
+        glowMult = Mathf.Clamp01(glowMult);
+        print(glowMult);
         
         
         if (distance > 1f)
@@ -92,5 +98,10 @@ public class BotMove : MonoBehaviour
     private float GetVelocityMagnitude()
     {
         return kinematicCharacterMotor.Velocity.magnitude;
+    }
+
+    public float GetGlowMult()
+    {
+        return glowMult;
     }
 }
