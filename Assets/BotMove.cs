@@ -34,15 +34,31 @@ public class BotMove : MonoBehaviour
     private Vector3 scaleOrig;
 
     private float glowMult;
+
+    public Light spotlight;
+    private bool spotlightEnabled;
     
     void Start()
     {
+        spotlightEnabled = true;
         scaleOrig = companion.localScale;
         hideMultCurrent = 1f;
     }
 
     void Update()
     {
+        if (Time.time is > 1f and < 2f && spotlightEnabled)
+        {
+            spotlight.gameObject.SetActive(false);
+            spotlightEnabled = false;
+        }
+
+        if (!spotlightEnabled && Time.time > 2.1f)
+        {
+            spotlight.gameObject.SetActive(true);
+            spotlightEnabled = true;
+        }
+        
         AccuracyOffset();
         timer += Time.deltaTime;
         

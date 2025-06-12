@@ -15428,6 +15428,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1200184126}
     - target: {fileID: 725052926243114641, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 614920470}
+    - target: {fileID: 725052926243114641, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: heightBySpeed
       value: 0.4
       objectReference: {fileID: 0}
@@ -15686,6 +15690,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 466567348819217231, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+    - {fileID: 589997250428099376, guid: 607a4ed068f32a340877181adc216f25, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       insertIndex: -1
@@ -15697,7 +15702,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1448137692}
     - targetCorrespondingSourceObject: {fileID: 1577199875826440660, guid: 607a4ed068f32a340877181adc216f25, type: 3}
-      insertIndex: 1
+      insertIndex: 0
       addedObject: {fileID: 614920467}
     - targetCorrespondingSourceObject: {fileID: 1577199875826440660, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       insertIndex: -1
