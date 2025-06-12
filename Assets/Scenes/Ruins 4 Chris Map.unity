@@ -12691,6 +12691,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.125, y: 0.125, z: 0.125}
   m_Center: {x: 0, y: 0.0625, z: 0}
+--- !u!4 &282619478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 117222067632131202, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+  m_PrefabInstance: {fileID: 542466289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &292019450 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 656725600717050556, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+  m_PrefabInstance: {fileID: 542466289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &295752655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15462,6 +15472,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8400000, guid: 822baefa3d5a17144be01c21a96bb870, type: 2}
     - target: {fileID: 725052926243114641, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: hidePos
+      value: 
+      objectReference: {fileID: 769611465}
+    - target: {fileID: 725052926243114641, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: companion
       value: 
       objectReference: {fileID: 1200184126}
@@ -15473,6 +15487,18 @@ PrefabInstance:
       propertyPath: cameraDistancePOI
       value: 
       objectReference: {fileID: 1843616798}
+    - target: {fileID: 1272377285741224989, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: light
+      value: 
+      objectReference: {fileID: 292019450}
+    - target: {fileID: 1272377285741224989, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: glowLight
+      value: 
+      objectReference: {fileID: 2004312775}
+    - target: {fileID: 1272377285741224989, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      propertyPath: smoothTime
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1272377285741224989, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: destination
       value: 
@@ -15684,6 +15710,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1398461255}
+    - targetCorrespondingSourceObject: {fileID: 117222067632131202, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 769611465}
     - targetCorrespondingSourceObject: {fileID: 7625991434071198526, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1448137692}
@@ -27670,6 +27699,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.125, y: 0.125, z: 0.125}
   m_Center: {x: 0, y: 0.0625, z: -0.000000029802322}
+--- !u!1 &769611464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769611465}
+  m_Layer: 9
+  m_Name: CompanionHidePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &769611465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769611464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 282619478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772388784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2802291158063959446, guid: ca2785d0d34eda24c857efcec98a55dd, type: 3}
@@ -69806,6 +69866,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000206957}
   m_Mesh: {fileID: -7724538072053568555, guid: 142c49375545a34419c7f0336bc203df, type: 3}
+--- !u!108 &2004312775 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 4075372084927555255, guid: 607a4ed068f32a340877181adc216f25, type: 3}
+  m_PrefabInstance: {fileID: 542466289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2007647688
 GameObject:
   m_ObjectHideFlags: 0
