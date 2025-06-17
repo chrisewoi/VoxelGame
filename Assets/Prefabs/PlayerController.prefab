@@ -297,7 +297,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.85617656, g: 0.978849, b: 0.9811321, a: 1}
-  m_Intensity: 10000
+  m_Intensity: 20000
   m_Range: 10000
   m_SpotAngle: 40.441666
   m_InnerSpotAngle: 32.243748
@@ -394,11 +394,15 @@ MonoBehaviour:
   updateRateMax: 0.15
   smoothTime: 0.2
   destination: {fileID: 0}
+  light: {fileID: 0}
+  glowLight: {fileID: 0}
   cameraDistancePOI: {fileID: 0}
   activateDistance: 50
   lineAnchor: {fileID: 2140018412738728335}
   spinSpeed: 10000
   line: {fileID: 1842269692840616147}
+  botMove: {fileID: 0}
+  glowSphere: {fileID: 0}
 --- !u!1 &627624252542199968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,9 +1229,10 @@ MonoBehaviour:
   kinematicCharacterMotor: {fileID: 6883448870876999951}
   cameraDistancePOI: {fileID: 0}
   activateDistance: 35
-  set: {fileID: 117222067632131202}
+  hidePos: {fileID: 0}
   hideMult: 5
   companion: {fileID: 0}
+  spotlight: {fileID: 0}
 --- !u!1 &8975738443898428315
 GameObject:
   m_ObjectHideFlags: 0
