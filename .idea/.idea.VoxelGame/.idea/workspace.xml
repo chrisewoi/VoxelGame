@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Models/New Models/treeBig.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/New Models/treeBig.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RuntimeSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RuntimeSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,7 @@
       <workItem from="1749603625130" duration="10274000" />
       <workItem from="1749698712551" duration="32000" />
       <workItem from="1749713884343" duration="1690000" />
-      <workItem from="1750210164761" duration="4556000" />
+      <workItem from="1750210164761" duration="5196000" />
     </task>
     <servers />
   </component>

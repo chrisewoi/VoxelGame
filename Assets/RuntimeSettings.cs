@@ -6,7 +6,7 @@ public class RuntimeSettings : MonoBehaviour
     [Header("DESTROYS ALL LIGHT OBJECTS\nIN THIS HIERARCHY ON RUNTIME!")]
     
     [TextArea]
-    public string Notes = "Put lighting in this hierarchy for use in the editor. It will be disabled on runtime.";
+    public string Notes = "Put lighting in this hierarchy for use in the editor. It will be disabled on runtime.\nhttps://www.freepik.com/free-photo/abstract-background-rock-texture_14622174.htm Image by freepik";
     
     private Light[] _lights;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
