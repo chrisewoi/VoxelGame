@@ -9,12 +9,26 @@ public class LightFire : MonoBehaviour
     public float lightTime;
 
     public Animator animator;
+    
+    public GameObject gate;
+    private Transform gateStartPos;
+    public Transform gateEndPos;
+    private bool hasGate;
+    private bool activateGate;
+    private float gateTimer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lit = false;
         lightswitch.SetActive(false);
+        if (gate != null)
+        {
+            hasGate = true;
+            gateStartPos = gate.transform;
+        }
+
+        gateTimer = -0.05f;
     }
 
 
@@ -34,7 +48,16 @@ public class LightFire : MonoBehaviour
             if (lightTime < 0f)
             {
                 lightswitch.SetActive(lit);
+                if (hasGate) activateGate = true;
             }
+        }
+
+        if (activateGate)
+        {
+            gate.transform.position = new Vector3(gate.transform.position.x,
+                gate.transform.position.y,
+                Mathf.Lerp(gateStartPos.position.z, gateEndPos.position.z, gateTimer));
+            gateTimer += Time.deltaTime /30f;
         }
     }
 }
