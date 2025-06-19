@@ -71,6 +71,9 @@ namespace KinematicCharacterController.Examples
         public Transform CameraFollowPoint;
         public float CrouchedCapsuleHeight = 1f;
         public bool EpicMode;
+        public GameObject box;
+        public bool nearBoxDebug;
+        public bool nearBox => Vector3.Distance(transform.position, box.transform.position) < 50f;
 
         public CharacterState CurrentCharacterState { get; private set; }
 
@@ -97,6 +100,8 @@ namespace KinematicCharacterController.Examples
 
             // Assign the characterController to the motor
             Motor.CharacterController = this;
+
+            _kinematicCharacterMotor = GetComponent<KinematicCharacterMotor>();
         }
 
         /// <summary>
@@ -514,5 +519,24 @@ namespace KinematicCharacterController.Examples
         public void OnDiscreteCollisionDetected(Collider hitCollider)
         {
         }
+
+        private KinematicCharacterMotor _kinematicCharacterMotor;
+        public void Update()
+        {
+            nearBoxDebug = nearBox;
+            if (nearBox)
+            {
+                if (_kinematicCharacterMotor.RigidbodyInteractionType == RigidbodyInteractionType.Kinematic)
+                {
+                    _kinematicCharacterMotor.RigidbodyInteractionType = RigidbodyInteractionType.None;
+                }
+            }
+            else if (_kinematicCharacterMotor.RigidbodyInteractionType == RigidbodyInteractionType.None)
+            {
+                _kinematicCharacterMotor.RigidbodyInteractionType = RigidbodyInteractionType.Kinematic;
+            }
+        }
     }
+
+
 }

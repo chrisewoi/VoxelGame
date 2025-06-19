@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/ExampleCharacter/Scripts/ExampleCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/ExampleCharacter/Scripts/ExampleCharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/New Terrain 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain 4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PixelRender.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PixelRender.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/BotLook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BridgeLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CancelVelocity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -120,6 +127,8 @@
       <workItem from="1749713884343" duration="1690000" />
       <workItem from="1750210164761" duration="5870000" />
       <workItem from="1750294873389" duration="2680000" />
+      <workItem from="1750322825709" duration="67000" />
+      <workItem from="1750322901341" duration="2172000" />
     </task>
     <servers />
   </component>
