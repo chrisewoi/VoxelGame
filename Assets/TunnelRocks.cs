@@ -30,5 +30,10 @@ public class TunnelRocks : MonoBehaviour
         {
             gameObject.SetActive(false); // if unlocked, disable this gameObject (the tunnel rocks).
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            unlocked = true;
+        }
     }
 }
