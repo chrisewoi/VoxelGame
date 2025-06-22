@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Scratch SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/BotLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BridgeLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CancelVelocity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TunnelGhostMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -128,7 +123,7 @@
       <workItem from="1750294873389" duration="2680000" />
       <workItem from="1750322825709" duration="67000" />
       <workItem from="1750322901341" duration="2172000" />
-      <workItem from="1750565302929" duration="666000" />
+      <workItem from="1750565302929" duration="1357000" />
     </task>
     <servers />
   </component>
