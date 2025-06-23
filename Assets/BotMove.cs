@@ -47,6 +47,9 @@ public class BotMove : MonoBehaviour
 
     void Update()
     {
+        // Set animation parameters
+        PlayerAnimationController.Moving(GetVelocityMagnitude() > 0.1f);
+        
         if (Time.time is > 1f and < 2f && spotlightEnabled)
         {
             spotlight.gameObject.SetActive(false);

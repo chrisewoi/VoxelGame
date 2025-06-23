@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/ScratchGlow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Woodcut SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BotMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BotMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/modelsnstuff/PlayerAnims.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/modelsnstuff/PlayerAnims.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 1.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 2.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 3.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 4.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 4.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/Materials/TunnelEndRenderer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/Materials/TunnelEndRenderer.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
