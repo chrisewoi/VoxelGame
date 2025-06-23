@@ -39,7 +39,8 @@ public class LightFire : MonoBehaviour
         if (!lit && activateDistance > distance)
         {
             lit = true;
-            animator.SetTrigger("PickupAnim");
+            //animator.SetTrigger("PickupAnim");
+            PlayerAnimationController.FireTrigger();
         }
 
         if(lit != lightswitch.activeInHierarchy)
