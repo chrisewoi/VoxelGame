@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="fba0b9f7-b3a8-4ee6-b9b0-9ce6be78de4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRenderer.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRenderer.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ruins 4 Chris Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/Materials/TunnelEndRenderer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/Materials/TunnelEndRenderer.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 1.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 2.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 3.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 4.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 4.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 5.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 5.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 6.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 6.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 7.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/TunnelEnd/TunnelEndRendererMax 7.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TunnelGhostMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TunnelGhostMove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +136,7 @@
       <workItem from="1750322901341" duration="2172000" />
       <workItem from="1750565302929" duration="8159000" />
       <workItem from="1750604269462" duration="3828000" />
-      <workItem from="1750649859929" duration="3529000" />
+      <workItem from="1750649859929" duration="4783000" />
     </task>
     <servers />
   </component>

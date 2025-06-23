@@ -15,8 +15,8 @@ public class TunnelGhostMove : MonoBehaviour
     public float easeTime;
     public AnimationCurve anim;
     
-    public RenderTexture renderTexture;
-    private RenderTexture renderTextureLow;
+    //public RenderTexture renderTexture;
+    public RenderTexture[] renderTextures;
     public float textureInterval;
     public float textureChance;
     private bool textureLow;
@@ -25,6 +25,7 @@ public class TunnelGhostMove : MonoBehaviour
     public float maxLowTexture;// as %
     private Vector2 textureResolution;
     private float textureTimer;
+    public Material renderMaterial;
     
     private Camera cam;
     
@@ -34,10 +35,8 @@ public class TunnelGhostMove : MonoBehaviour
     {
         cam = GetComponentInChildren<Camera>();
         position = gameObject.transform.position;
-        textureResolution = new Vector2(renderTexture.width, renderTexture.height);
-        //renderTextureLow = new RenderTexture();
-        renderTextureLow.Create();
-        print(textureResolution);
+        //textureResolution = new Vector2(renderTextures[0].width, renderTextures[0].height);
+        
         textureTimer = 0f;
         textureChanceMult = 1f;
     }
@@ -65,16 +64,24 @@ public class TunnelGhostMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            //triggered = false;
+        }    
+    }
+
     private void SetTextureRes()
     {
-        if (textureTimer > textureInterval)
+        if (textureTimer > textureInterval * (textureLow?0.7f:1))
         {
             // Reset timer
             textureTimer = 0f;
             
             // Set chance mult
             textureChanceMult = 1f;
-            if (textureLow) textureChanceMult = 3f; // tweak this
+            if (textureLow) textureChanceMult = 4f; // tweak this
             
             //renderTexture.Release(); // Allow RenderTexture resolution to be adjusted
             
@@ -83,29 +90,33 @@ public class TunnelGhostMove : MonoBehaviour
             {
                 textureLow = true;
                 
-                renderTexture.Release();
 
-                int textureMult = 1;
+                /*int textureMult = 1;
                 if (Random.value > 0.5f)
                 {
                     textureMult = 5;
-                }
+                }*/
 
-                int finalMult = (int)Random.Range(minLowTexture, maxLowTexture) * textureMult;
+                //int finalMult = (int)Random.Range(minLowTexture, maxLowTexture) * textureMult;
 
-                renderTextureLow.width = (int)(textureResolution.x * finalMult); // Scaled down render scale
-                renderTextureLow.height = (int)(textureResolution.y * finalMult);//
+                cam.targetTexture = renderTextures[Random.Range(1, renderTextures.Length)];
+                renderMaterial.mainTexture = cam.targetTexture;
+                
 
-                cam.targetTexture = renderTextureLow;
+                //renderTextureLow.width = (int)(textureResolution.x * finalMult); // Scaled down render scale
+                //renderTextureLow.height = (int)(textureResolution.y * finalMult);//
+
+                //cam.targetTexture = renderTextureLow;
             }
             else
             {
                 textureLow = false;
-                if(renderTextureLow != null) renderTextureLow.Release();
+                //if(renderTextureLow != null) renderTextureLow.Release();
                 //renderTexture.width = (int)textureResolution.x; // Default render scale
                 //renderTexture.height = (int)textureResolution.y;//
 
-                cam.targetTexture = renderTexture;
+                cam.targetTexture = renderTextures[0];
+                renderMaterial.mainTexture = cam.targetTexture;
             }
 
             //renderTexture.Create(); // Locks in the new res

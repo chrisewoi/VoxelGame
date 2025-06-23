@@ -25297,15 +25297,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 514.99
       objectReference: {fileID: 0}
     - target: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 8.01
       objectReference: {fileID: 0}
     - target: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 590.99
       objectReference: {fileID: 0}
     - target: {fileID: 2661245129312704894, guid: 607a4ed068f32a340877181adc216f25, type: 3}
       propertyPath: m_LocalRotation.w
@@ -112066,6 +112066,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  renderTextures:
+  - {fileID: 8400000, guid: aeb510b496d10f34aa55dea2c0702b95, type: 2}
+  - {fileID: 8400000, guid: 5401aff40fb4c3f4d883e02053e8d442, type: 2}
+  - {fileID: 8400000, guid: 9053e01a2a2399746abb441da4f4f7fa, type: 2}
+  - {fileID: 8400000, guid: d10b89cff5807a44cbd0aa5063d5d5f3, type: 2}
+  - {fileID: 8400000, guid: cfa6af8ba731e8b468f2074257f7c816, type: 2}
+  textureInterval: 0.5
+  textureChance: 0.2
+  minLowTexture: 0.01
+  maxLowTexture: 0.1
+  renderMaterial: {fileID: 2100000, guid: 95b6c8ebc0ecb354baba354d4e5569b8, type: 2}
 --- !u!65 &2089052115
 BoxCollider:
   m_ObjectHideFlags: 0
